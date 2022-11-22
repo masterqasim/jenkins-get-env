@@ -1,0 +1,14 @@
+pipeline {
+   agent any
+   stages {
+        stage('env') {
+            steps {
+                sh '''#!/bin/bash
+                    echo env
+                '''
+            }
+        }
+
+   }
+
+}
